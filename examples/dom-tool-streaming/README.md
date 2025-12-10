@@ -23,11 +23,27 @@ This example demonstrates how an LLM can manipulate DOM elements using structure
 
 ## Usage
 
-1. Open `src/index.html` in a WebGPU-enabled browser
-2. Enter a prompt describing the DOM changes you want
-3. Click "Start" to begin generation
-4. Watch as the LLM streams DOM commands that are applied gradually
-5. Use "Stop" to halt execution or "Clear" to reset the page
+### Option 1: Development Mode
+
+1. Install dependencies: `npm install`
+2. Start development server: `npm start`
+3. Open http://localhost:8888 in a WebGPU-enabled browser
+4. Enter a prompt describing the DOM changes you want
+5. Click "Start" to begin generation
+6. Watch as the LLM streams DOM commands that are applied gradually
+7. Use "Stop" to halt execution or "Clear" to reset the page
+
+### Option 2: Production Build
+
+1. Install dependencies: `npm install`
+2. Build the project: `npm run build`
+3. Start simple server: `./start-server.sh` (or serve `lib/` directory with any HTTP server)
+4. Open http://localhost:8080 in a WebGPU-enabled browser
+5. Follow steps 4-7 from above
+
+### Option 3: Direct File Access
+
+1. Open `src/index.html` directly in a WebGPU-enabled browser (may have CORS issues with WebLLM)
 
 ## Example Prompts
 
